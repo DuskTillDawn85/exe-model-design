@@ -33,5 +33,5 @@ window.onload = () => {
   // 点击左上角LOGO返回首页
   document
     .getElementsByClassName("logo")[0]
-    .addEventListener("click", () => (window.location.href = "./home.html"));
+    .addEventListener("click", () => (window.location.href = "./index.html"));
 };
