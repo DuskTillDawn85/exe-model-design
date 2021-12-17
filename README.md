@@ -1,9 +1,9 @@
 
 ## College Web Design Course Homework
 
-> These are duplicated page of the original website.
-
 **All codes are written in native JavaScript, html and css.**
+
+Online preview: [https://dusktilldawn85.github.io/exe-model-design/](https://dusktilldawn85.github.io/exe-model-design/)
 
 > See another homework of *this* course: [Xiaomi Official Website](https://dusktilldawn85.github.io/exe-xiaomi/)
 
