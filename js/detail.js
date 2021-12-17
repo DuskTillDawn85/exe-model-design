@@ -41,8 +41,8 @@ for (let i = 0; i < paginator.length; i++) {
     images[count].style.opacity = 0;
     navs[count].style.border = "2px solid transparent";
     const index = [].indexOf.call(paginator, paginator[i]);
-    if(index === 0) count = (count--) % images.length; // 左减右加
-    else count = (count++) % images.length;
+    if(index === 0) count = (count - 1) % images.length; // 左减右加
+    else count = (count + 1) % images.length;
     init(); // 立即显示选中当前图片
     timer = setTimer(); // 根据当前index重新设置定时器
   });
