@@ -1,0 +1,114 @@
+/* 页头部分 */
+header {
+  width: 100%;
+  position: absolute;
+  z-index: 999;
+  height: 120px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 140px 0 80px;
+}
+
+header .logo {
+  width: 180px;
+}
+
+header .icon,
+#fixed-header .icon {
+  width: 23px;
+  height: 23px;
+  margin-left: 32px;
+}
+
+header .icon:first-of-type,
+#fixed-header .icon:first-of-type {
+  width: 18px;
+}
+
+.news-box-wrap {
+  display: flex;
+  align-items: center;
+}
+.news-box-wrap a {
+  font-size: 12px;
+  padding-left: 20px;
+  letter-spacing: 2.5px;
+}
+/* 右上角的菜单按钮 */
+.menu-btn {
+  width: 150px;
+  height: 150px;
+  border: 1px solid #c5c5c5;
+  position: absolute;
+  border-radius: 50%;
+  right: -50px;
+  top: 20px;
+  cursor: pointer;
+}
+.menu-btn span {
+  display: block;
+  height: 2px;
+  width: 19px;
+  background: #c5c5c5;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+.menu-btn span:last-of-type {
+  left: 45%;
+  top: 56%;
+}
+
+.news-box {
+  height: 30px;
+  line-height: 30px;
+  width: 320px;
+  padding: 0 25px;
+  font-size: 12px;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.news-box .new {
+  color: #db9ba5;
+  letter-spacing: 0.83px;
+  font-weight: bold;
+}
+
+/* 滑动后显示的固定在顶部的白色导航栏 */
+#fixed-header .logo {
+  width: 150px;
+}
+#fixed-header {
+  width: 100%;
+  position: fixed;
+  z-index: 999;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 140px 0 80px;
+  background-color: white;
+  visibility: hidden;
+  transition: 0.5s;
+}
+#fixed-header .menu-btn {
+  top: -85%;
+}
+.fixed-header-show {
+  animation: zoomIn .3s forwards;
+}
+@keyframes zoomIn {
+  from {
+    visibility: hidden;
+    opacity: 0;
+    height: 90px;
+  }
+  to {
+    visibility: visible;
+    opacity: 1;
+    height: 60px;
+  }
+}

@@ -1,0 +1,277 @@
+main {
+  width: 100%;
+  padding-top: 130px;
+  overflow: hidden;
+  position: relative;
+  /* background-image: url("../img/about/about-kv.png");
+    background-position: right top;
+    background-repeat: no-repeat;
+    background-size: 60% auto; */
+}
+
+/* 左侧主菜单 */
+.main-menu {
+  position: absolute;
+  left: 80px;
+  top: 220px;
+  z-index: 99;
+}
+
+.main-menu a {
+  font-size: 14px;
+  font-weight: 400;
+  font-family: var(--text-family);
+  letter-spacing: 1.05px;
+  line-height: 30px;
+  color: #646464;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.main-menu a:hover {
+  color: #bbb;
+}
+
+.part-1 {
+  width: 100%;
+  min-height: 870px;
+  background-color: white;
+  position: relative;
+}
+
+.part-1 img {
+  position: absolute;
+  right: 0;
+  top: -130px;
+  width: 77%;
+  height: 1000px;
+  object-fit: cover;
+}
+
+.part-1 span {
+  position: absolute;
+  top: 34.5%;
+  left: 15%;
+  mix-blend-mode: difference;
+  color: #fff;
+  font-weight: bold;
+  display: block;
+  font-size: 24px;
+  line-height: 2;
+  letter-spacing: 15px;
+}
+.part-1 span::after {
+  content: "";
+  position: absolute;
+  bottom: 5px;
+  left: 3px;
+  width: 55px;
+  height: 1px;
+  background-color: #5e4d4d;
+}
+
+/* 第二部分 */
+.part-2,
+.part-3,
+.part-4,
+.part-5 {
+  width: 100%;
+  position: relative;
+}
+
+.part-2::before {
+  content: "";
+  position: absolute;
+  display: block;
+  z-index: -1;
+  top: -500px;
+  left: auto;
+  right: 0;
+  background-image: url("../img/about/bg04.png");
+  background-position: right top;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 40vw;
+  height: 100vw;
+}
+
+.part-2 .message-bg {
+  position: absolute;
+  top: 0;
+  right: calc((100vw - 920px) / 2 * -1);
+  width: 45vw;
+  height: 97%;
+  z-index: -1;
+  overflow: hidden;
+  object-fit: cover;
+}
+
+.part-2 .content-wrap {
+  max-width: 910px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.part-2 .logo {
+  width: 342px;
+  margin: 200px auto;
+}
+
+.part-2 .message-wrap {
+  position: relative;
+}
+
+.part-2 p {
+  text-align: left;
+  font-size: 16px;
+  margin-bottom: 40px;
+  line-height: 1.88;
+  letter-spacing: 1.2px;
+  font-weight: lighter;
+  color: var(--text-color);
+}
+
+.part-2 p img {
+  width: 202px;
+}
+
+.p3-wrap {
+  width: 100%;
+  max-width: 1080px;
+  margin: 200px auto;
+}
+
+.p3-wrap::before {
+  content: "";
+  position: absolute;
+  background: url("../img/about/about-gallery_bg.png") no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 864px;
+  height: 640px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+.p3-wrap img:nth-of-type(1) {
+  width: 540px;
+  height: 540px;
+}
+
+.p3-wrap img:nth-of-type(2) {
+  width: 450px;
+  position: relative;
+  top: 300px;
+  left: 90px;
+}
+
+.p3-wrap img:nth-of-type(3) {
+  width: 297px;
+  position: relative;
+  left: 270px;
+  top: 80px;
+}
+
+.p4-wrap {
+  width: 94%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.p4-wrap img {
+  width: 100%;
+  height: 728px;
+  object-fit: cover;
+}
+
+.p4-content-wrap {
+  position: absolute;
+  left: 16%;
+  top: 25%;
+}
+
+.p4-content-wrap h1 {
+  font-size: 46px;
+  letter-spacing: 2.4px;
+  font-family: var(--text-family);
+  font-weight: normal;
+  color: #454545;
+  margin: 0;
+  margin-bottom: 65px;
+  display: flex;
+}
+.p4-content-wrap span {
+    line-height: 61px;
+}
+
+.p4-content-wrap p {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.88;
+  letter-spacing: 1.2px;
+  margin-bottom: 30px;
+  color: #454545;
+}
+
+.part-5 {
+  padding: 145px 0 85px;
+}
+
+.part-5::before {
+  content: "";
+  position: absolute;
+  display: block;
+  z-index: -1;
+  top: -500px;
+  left: 0;
+  background-image: url("../img/about/bg05.png");
+  background-position: left top;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 40vw;
+  height: 100vw;
+}
+
+.p5-wrap {
+  width: 100%;
+  max-width: 920px;
+  margin: 0 auto;
+}
+
+.p5-wrap h2 {
+  color: #454545;
+  text-align: center;
+  font-size: 22px;
+  margin: 0;
+  margin-bottom: 85px;
+  letter-spacing: 2px;
+}
+
+.p5-wrap .item-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 30px 0;
+}
+
+.p5-wrap .item-wrap img {
+  width: 115px;
+  height: 115px;
+}
+.p5-wrap .content-wrap {
+  width: 80%;
+}
+.p5-wrap .content-wrap p {
+  font-size: 14px;
+  line-height: 2.14;
+  color: #454545;
+  margin: 0;
+}
+
+.p5-wrap .content-wrap p:first-of-type {
+  margin-bottom: 20px;
+  font-size: 19px;
+  letter-spacing: 1px;
+}

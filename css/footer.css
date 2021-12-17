@@ -1,0 +1,180 @@
+footer {
+  width: 100%;
+}
+
+.footer-top-wrap {
+  border-top: solid 1px #e5e5e5;
+  padding: 135px 80px;
+  display: flex;
+}
+
+.footer-top-wrap > div {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  position: relative;
+}
+
+.footer-top-wrap .item-title {
+  margin: 0;
+  margin-right: 215px;
+  font-size: 24px;
+}
+
+.footer-top-wrap .item-wrap p {
+  margin: 0;
+  line-height: 2.5;
+  position: relative;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.footer-top-wrap .item-wrap p::after {
+  content: "";
+  position: absolute;
+  right: -40px;
+  top: 50%;
+  transform: translate(0, -50%);
+  width: 10px;
+  height: 10px;
+  background: url("../img/icon/ico-arrow.png") no-repeat;
+  background-size: contain;
+}
+
+.footer-top-wrap .contact-title {
+  margin: 0;
+  margin-right: 85px;
+  font-size: 24px;
+}
+
+.footer-top-wrap .contact-wrap p {
+  font-size: 18px;
+  letter-spacing: 1.85px;
+  line-height: 1.6;
+  margin: 0;
+  margin-bottom: 40px;
+  white-space: nowrap;
+  position: relative;
+}
+
+.footer-top-wrap .contact-wrap p::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -40px;
+  transform: translate(0, -50%);
+  width: 30px;
+  height: 30px;
+  background: url("../img/icon/ico-line-color.png") no-repeat;
+  background-size: contain;
+}
+
+.footer-top-wrap .contact-wrap p:last-of-type:before {
+  background: url("../img/icon/ico-mail.png") no-repeat;
+  background-size: contain;
+}
+
+.footer-top-wrap button {
+  width: 212px;
+  line-height: 51px;
+  height: 51px;
+  transition: 0.5s;
+  outline: none;
+  user-select: none;
+  border: none;
+  margin-bottom: 15px;
+  margin-left: 30px;
+  position: relative;
+  top: -15px;
+  cursor: pointer;
+}
+
+.footer-top-wrap button:first-of-type {
+  background: #07b53b;
+  color: white;
+}
+
+.footer-top-wrap button:hover {
+  opacity: 0.65;
+}
+
+.footer-top-wrap .extra-link {
+  line-height: 1.2;
+  font-size: 12px;
+  padding-right: 40px;
+  position: relative;
+  left: 80px;
+  display: inline-block;
+  transition: 0.5s;
+  border-bottom: solid 1px #e5e5e5;
+}
+
+.footer-top-wrap .extra-link:hover {
+  opacity: 0.65;
+}
+
+.footer-top-wrap .extra-link::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translate(0, -50%);
+  width: 10px;
+  height: 10px;
+  background: url("../img/icon/ico-arrow.png") no-repeat;
+  background-size: contain;
+}
+
+/* 中部 */
+.footer-middle-wrap {
+  width: 100%;
+  background: url("../img/home/bg-footer.png") no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.middle-content-wrap {
+  padding: 233px 0;
+  text-align: center;
+}
+
+.middle-content-wrap img {
+  height: 22px;
+  margin-right: 20px;
+}
+
+.middle-content-wrap img:first-of-type {
+  margin-right: 40px;
+  height: 20px;
+}
+
+.middle-content-wrap p {
+  font-size: 12px;
+  color: #c7c7c7;
+  font-weight: lighter;
+  margin: 0;
+  margin-top: 15px;
+}
+
+/* 底部 */
+.footer-bottom-wrap {
+  margin: 40px;
+  margin-left: 80px;
+}
+
+.footer-bottom-wrap a {
+  margin-right: 20px;
+  font-size: 12px;
+  transition: 0.5s;
+  font-family: var(--text-family);
+  color: var(--text-color);
+  cursor: pointer;
+}
+
+.footer-bottom-wrap a:last-of-type {
+  float: right;
+}
+
+.footer-bottom-wrap a:hover {
+  opacity: 0.65;
+}
