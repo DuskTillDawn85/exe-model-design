@@ -128,7 +128,7 @@ footer {
 /* 中部 */
 .footer-middle-wrap {
   width: 100%;
-  background: url("../img/home/bg-footer.png") no-repeat;
+  background: url("../img/home/bg-footer.webp") no-repeat;
   background-size: cover;
   background-position: center;
 }
